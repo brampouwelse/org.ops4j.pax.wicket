@@ -172,11 +172,16 @@
   </reporting>
 
   <modules>
+    <module>api</module>
+    <module>core</module>
     <module>service</module>
+    <module>blueprint</module>
+    <module>spring</module>
     <module>test</module>
     <module>samples</module>
     <module>features</module>
     <module>itests</module>
+    <module>namespace</module>
   </modules>
 
   <dependencyManagement>
@@ -184,7 +189,32 @@
       <!-- Internal Dependencies -->
       <dependency>
         <groupId>org.ops4j.pax.wicket</groupId>
+        <artifactId>org.ops4j.pax.wicket.api</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.wicket</groupId>
+        <artifactId>org.ops4j.pax.wicket.core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.wicket</groupId>
+        <artifactId>org.ops4j.pax.wicket.namespace</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.wicket</groupId>
         <artifactId>org.ops4j.pax.wicket.service</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.wicket</groupId>
+        <artifactId>org.ops4j.pax.wicket.blueprint</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.ops4j.pax.wicket</groupId>
+        <artifactId>org.ops4j.pax.wicket.spring</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
@@ -294,6 +324,11 @@
         <artifactId>pax-logging-api</artifactId>
         <version>${pax.logging.version}</version>
         <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.geronimo.specs</groupId>

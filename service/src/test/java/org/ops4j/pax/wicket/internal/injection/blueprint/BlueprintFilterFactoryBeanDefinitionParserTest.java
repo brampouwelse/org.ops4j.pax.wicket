@@ -19,7 +19,8 @@ import static org.hamcrest.Matchers.typeCompatibleWith;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-import org.ops4j.pax.wicket.internal.injection.FilterFactoryDecorator;
+import org.ops4j.pax.wicket.blueprint.internal.namespace.BlueprintFilterFactoryBeanDefinitionParser;
+import org.ops4j.pax.wicket.namespace.FilterFactoryDecorator;
 
 public class BlueprintFilterFactoryBeanDefinitionParserTest {
 

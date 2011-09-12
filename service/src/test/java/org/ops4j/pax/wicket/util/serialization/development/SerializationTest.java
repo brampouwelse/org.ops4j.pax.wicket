@@ -29,7 +29,7 @@ import java.util.Random;
 
 import org.apache.wicket.application.IClassResolver;
 import org.junit.Test;
-import org.ops4j.pax.wicket.internal.EnumerationAdapter;
+import org.ops4j.pax.wicket.core.util.EnumerationAdapter;
 
 /**
  * @author edward.yakop@gmail.com

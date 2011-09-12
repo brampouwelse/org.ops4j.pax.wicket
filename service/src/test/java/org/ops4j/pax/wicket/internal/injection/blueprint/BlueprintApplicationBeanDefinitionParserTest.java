@@ -19,7 +19,8 @@ import static org.hamcrest.Matchers.typeCompatibleWith;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-import org.ops4j.pax.wicket.internal.injection.ApplicationDecorator;
+import org.ops4j.pax.wicket.blueprint.internal.namespace.BlueprintApplicationBeanDefinitionParser;
+import org.ops4j.pax.wicket.namespace.ApplicationDecorator;
 
 public class BlueprintApplicationBeanDefinitionParserTest {
 

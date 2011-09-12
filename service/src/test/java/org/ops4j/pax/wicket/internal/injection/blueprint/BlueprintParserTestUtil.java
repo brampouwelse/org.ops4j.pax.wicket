@@ -26,6 +26,7 @@ import org.apache.aries.blueprint.mutable.MutableCollectionMetadata;
 import org.apache.aries.blueprint.mutable.MutableMapMetadata;
 import org.apache.aries.blueprint.mutable.MutableRefMetadata;
 import org.apache.aries.blueprint.mutable.MutableValueMetadata;
+import org.ops4j.pax.wicket.blueprint.internal.namespace.AbstractBlueprintBeanDefinitionParser;
 import org.osgi.service.blueprint.reflect.BeanMetadata;
 import org.w3c.dom.Element;
 

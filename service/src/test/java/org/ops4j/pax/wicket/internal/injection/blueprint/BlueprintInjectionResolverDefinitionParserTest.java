@@ -19,7 +19,8 @@ import static org.hamcrest.Matchers.typeCompatibleWith;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-import org.ops4j.pax.wicket.internal.injection.BundleInjectionProviderHelperDecorator;
+import org.ops4j.pax.wicket.blueprint.internal.namespace.BlueprintInjectionResolverDefinitionParser;
+import org.ops4j.pax.wicket.namespace.BundleInjectionProviderHelperDecorator;
 
 public class BlueprintInjectionResolverDefinitionParserTest {
     @Test

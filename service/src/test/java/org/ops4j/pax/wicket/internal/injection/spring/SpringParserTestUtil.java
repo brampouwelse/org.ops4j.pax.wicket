@@ -22,6 +22,7 @@ import static org.mockito.Matchers.argThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
+import org.ops4j.pax.wicket.spring.internal.namespace.AbstractSpringBeanDefinitionParser;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.w3c.dom.Element;
 

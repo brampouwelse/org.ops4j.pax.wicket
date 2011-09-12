@@ -19,7 +19,8 @@ import static org.hamcrest.Matchers.typeCompatibleWith;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-import org.ops4j.pax.wicket.internal.injection.BundleClassResolverHelperDecorator;
+import org.ops4j.pax.wicket.namespace.BundleClassResolverHelperDecorator;
+import org.ops4j.pax.wicket.spring.internal.namespace.SpringClassResolverDefinitionParser;
 
 public class SpringClassResolverDefinitionParserTest {
 

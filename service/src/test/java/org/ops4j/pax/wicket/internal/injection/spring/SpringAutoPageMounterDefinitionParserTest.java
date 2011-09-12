@@ -19,7 +19,8 @@ import static org.hamcrest.Matchers.typeCompatibleWith;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-import org.ops4j.pax.wicket.internal.injection.BundleScanningMountPointProviderDecorator;
+import org.ops4j.pax.wicket.namespace.BundleScanningMountPointProviderDecorator;
+import org.ops4j.pax.wicket.spring.internal.namespace.SpringAutoPageMounterDefinitionParser;
 
 public class SpringAutoPageMounterDefinitionParserTest {
     @Test
