@@ -21,7 +21,8 @@
     <module>mixed</module>
     <module>edge</module>
     <module>navigation</module>
-    <module>features</module>
+    <module>apache-shiro</module>
+	<module>features</module>
   </modules>
 
   <properties>
