@@ -69,5 +69,23 @@
     <bundle>mvn:org.ops4j.pax.wicket.samples.springdm.injection/org.ops4j.pax.wicket.samples.springdm.injection.simple/${project.version}</bundle>
   </feature>
 
+  <feature name="wicket-samples-apache-shiro" version="${project.version}">
+    <feature>war</feature>
+    <feature version="${project.version}">wicket-samples-base</feature>
+    <feature version="${apache.shiro.version}">apache-shiro</feature>
+    <feature version="${wicket.shiro.version}">wicketstuff-shiro</feature>
+    <bundle>mvn:org.ops4j.pax.wicket.samples/org.ops4j.pax.wicket.samples.apache-shiro/${project.version}</bundle>
+  </feature>
+  
+  <feature name="apache-shiro" version="${apache.shiro.version}">
+  	<feature>spring-web</feature>
+  	<bundle>mvn:org.apache.shiro/shiro-core/${apache.shiro.version}</bundle>
+	<bundle>mvn:org.apache.shiro/shiro-web/${apache.shiro.version}</bundle>
+	<bundle>mvn:org.apache.shiro/shiro-spring/${apache.shiro.version}</bundle>
+  </feature>
+  
+  <feature name="wicketstuff-shiro" version="${wicket.shiro.version}">
+  	<bundle>wrap:mvn:org.wicketstuff/wicket-shiro/${wicket.shiro.version}</bundle>
+  </feature>
 </features>
 
