@@ -17,22 +17,26 @@ package org.ops4j.pax.wicket.it.samples;
 
 import static org.junit.Assert.assertTrue;
 import static org.ops4j.pax.exam.CoreOptions.mavenBundle;
-import static org.ops4j.pax.exam.CoreOptions.options;
 import static org.ops4j.pax.exam.CoreOptions.provision;
+import static org.ops4j.pax.exam.OptionUtils.combine;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.ops4j.pax.exam.Option;
 import org.ops4j.pax.exam.junit.Configuration;
+import org.ops4j.pax.exam.junit.JUnit4TestRunner;
 import org.ops4j.pax.wicket.it.PaxWicketIntegrationTest;
 
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 
+@RunWith(JUnit4TestRunner.class)
 public class SampleWebUiTest extends PaxWicketIntegrationTest {
 
     @Configuration
     public final Option[] configureAdditionalProvision() {
-        return options(
+        return combine(
+            configureProvisions(),
             provision(mavenBundle().groupId("org.apache.servicemix.bundles")
                 .artifactId("org.apache.servicemix.bundles.aopalliance").versionAsInProject()),
             provision(mavenBundle().groupId("org.springframework").artifactId("spring-aop").versionAsInProject()),
