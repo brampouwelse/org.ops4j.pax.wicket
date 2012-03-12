@@ -10,7 +10,7 @@
 	<parent>
 		<groupId>org.ops4j.pax.wicket.samples</groupId>
 		<artifactId>samples</artifactId>
-		<version>0.8.0-SNAPSHOT</version>
+		<version>0.9.0-SNAPSHOT</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
@@ -42,11 +42,20 @@
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<!-- The bundle activator is only required if we do the things by hand. -->
 						<Import-Package>
+							*,
 							org.apache.wicket,
+							org.apache.wicket.event,
 							org.apache.wicket.markup.html,
 							org.apache.wicket.markup.html.basic,
 							org.apache.wicket.markup.html.link,
+							org.apache.wicket.page,
 							org.apache.wicket.protocol.http,
+							org.apache.wicket.request.cycle,
+							org.apache.wicket.request.http,
+							org.apache.wicket.request.mapper,
+							org.apache.wicket.request.mapper.parameter,
+							org.apache.wicket.request.resource,
+							org.apache.wicket.util,
 							org.ops4j.pax.wicket.api,
 							org.ops4j.pax.wicket.util,
 							org.osgi.framework,
@@ -60,22 +69,22 @@
 							org.apache.wicket.request,
 							javax.servlet.http,
 							org.apache.wicket.ajax,
-							org.apache.shiro, 
-							org.apache.shiro.authc, 
-							org.apache.shiro.authc.credential, 
+							org.apache.shiro,
+							org.apache.shiro.authc,
+							org.apache.shiro.authc.credential,
 							org.apache.shiro.authz,
-							org.apache.shiro.realm, 
-							org.apache.shiro.spring, 
-							org.apache.shiro.spring.web, 
+							org.apache.shiro.realm,
+							org.apache.shiro.spring,
+							org.apache.shiro.spring.web,
 							org.apache.shiro.subject,
-							org.apache.shiro.web.mgt, 
+							org.apache.shiro.web.mgt,
 							org.apache.shiro.web.servlet,
-							org.apache.wicket.authorization, 
-							org.slf4j, 
+							org.apache.wicket.authorization,
+							org.slf4j,
 							org.wicketstuff.shiro,
 							org.wicketstuff.shiro.page,
 							org.wicketstuff.shiro.annotation,
-							org.wicketstuff.shiro.authz, 
+							org.wicketstuff.shiro.authz,
 							org.wicketstuff.shiro.component,
 							org.springframework.web.filter
 						</Import-Package>
@@ -114,28 +123,28 @@
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-core</artifactId>
-			<version>1.1.0</version>
+			<version>1.2.0</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-web</artifactId>
-			<version>1.1.0</version>
+			<version>1.2.0</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
-			<version>1.1.0</version>
+			<version>1.2.0</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.wicketstuff</groupId>
-			<artifactId>wicket-shiro</artifactId>
-			<version>1.4.19</version>
+			<artifactId>wicketstuff-shiro</artifactId>
+			<version>1.5.4</version>
 			<scope>provided</scope>
 		</dependency>
 

@@ -50,7 +50,8 @@ public class ShiroRealm extends AuthorizingRealm {
 		}else if ("balkenende".equals(userName)){
 			return new SimpleAuthenticationInfo("balkenende", "h.potter", getName());
 		}
-		return null;
+		
+		throw new AuthenticationException();
 
 	}
 

@@ -85,7 +85,7 @@
   </feature>
   
   <feature name="wicketstuff-shiro" version="${wicket.shiro.version}">
-  	<bundle>wrap:mvn:org.wicketstuff/wicket-shiro/${wicket.shiro.version}</bundle>
+  	<bundle>wrap:mvn:org.wicketstuff/wicketstuff-shiro/${wicket.shiro.version}</bundle>
   </feature>
 </features>
 

@@ -7,6 +7,8 @@ import org.wicketstuff.shiro.annotation.ShiroSecurityConstraint;
 @ShiroSecurityConstraint(constraint=ShiroConstraint.HasRole, value="president")
 public class WarPage extends WebPage {
 
+	private static final long serialVersionUID = 1L;
+
 	public WarPage() {
 		
 	}

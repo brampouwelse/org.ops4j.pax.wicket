@@ -11,20 +11,18 @@ public class WicketApplication extends WebApplication {
 	protected void init() {
 		super.init();
 
-		// Configure Shiro
+		// Enable Shiro security
 		AnnotationsShiroAuthorizationStrategy authz = new AnnotationsShiroAuthorizationStrategy();
 		getSecuritySettings().setAuthorizationStrategy(authz);
 		getSecuritySettings().setUnauthorizedComponentInstantiationListener(
 				new ShiroUnauthorizedComponentListener(LoginPage.class, AccesDeniedPage.class, authz));
 
-		mountBookmarkablePage("login", LoginPage.class);
-		mountBookmarkablePage("secure", SecuredPage.class);
-		
+		mountPage("login", LoginPage.class);
+		mountPage("secure", SecuredPage.class);
 	}
 
 	@Override
 	public Class<? extends Page> getHomePage() {
 		return HomePage.class;
 	}
-
 }

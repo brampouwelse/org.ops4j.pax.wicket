@@ -28,8 +28,8 @@
   <properties>
     <org.ops4j.pax.logging.DefaultServiceLog.level>WARN</org.ops4j.pax.logging.DefaultServiceLog.level>
     <felix.log.level>1</felix.log.level>
-    <apache.shiro.version>1.1.0</apache.shiro.version>
-    <wicket.shiro.version>1.4.19</wicket.shiro.version>
+    <apache.shiro.version>1.2.0</apache.shiro.version>
+    <wicket.shiro.version>1.5.4</wicket.shiro.version>
   </properties>
 
   <build>
